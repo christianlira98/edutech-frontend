@@ -1,7 +1,6 @@
 import ax from 'axios'
 
 // Axios to use on project
-const apiPort = 5000
-const axios = ax.create({ baseURL: `http://localhost:${apiPort}/api/` })
+const axios = ax.create({ baseURL: process.env.VUE_APP_API_BASE_URL +'/api'})
 
 export default axios
